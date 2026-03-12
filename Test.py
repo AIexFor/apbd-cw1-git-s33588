@@ -1,3 +1,5 @@
+numbers = []
+
 def is_prime(number):
     if number < 2:
         return False
@@ -10,17 +12,25 @@ def is_prime(number):
 
 print("Thats all prime numbers from 1 to 100")
 
-print(*(n for n in range(1, 100) if is_prime(n)))
+for i in range(1, 100):
+    if is_prime(i):
+        numbers.append(i)
+
+print(numbers)
 
 def CalculateMax(values):
-    max = 0
+    max = -1
     for value in values:
         if value > max:
             max = value
+    return max
 
 def CalculateMin(values):
-    min = 0
+    min = 101
     for value in values:
         if value < min:
             min = value
+    return min
 
+print("thats lowest prime numbers from 1 to 100: ", CalculateMin(numbers))
+print("thats highest prime numbers from 1 to 100: ", CalculateMax(numbers))
