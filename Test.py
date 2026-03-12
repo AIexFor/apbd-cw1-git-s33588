@@ -17,3 +17,5 @@ def CalculateMax(values):
     for value in values:
         if value > max:
             max = value
+
+def CalculateMin(values):
