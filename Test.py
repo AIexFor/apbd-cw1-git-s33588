@@ -19,7 +19,7 @@ def CalculateMax(values):
             max = value
 
 def CalculateMin(values):
-    min = 0
+    min = 51
     for value in values:
         if value < min:
             min = value
