@@ -32,5 +32,14 @@ def CalculateMin(values):
             min = value
     return min
 
+def CalculateAverage(values):
+    avg = 0
+    for value in values:
+        avg += value
+
+    return avg / len(values)
+
+
 print("thats lowest prime numbers from 1 to 100: ", CalculateMin(numbers))
 print("thats highest prime numbers from 1 to 100: ", CalculateMax(numbers))
+
