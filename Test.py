@@ -21,4 +21,6 @@ def CalculateMax(values):
 def CalculateMin(values):
     min = 0
     for value in values:
+        if value < min:
+            min = value
 
