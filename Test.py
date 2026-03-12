@@ -39,7 +39,7 @@ def CalculateAverage(values):
 
     return avg / len(values)
 
-
+print("thats an average prime numbers from 1 to 100: ", CalculateAverage(numbers))
 print("thats lowest prime numbers from 1 to 100: ", CalculateMin(numbers))
 print("thats highest prime numbers from 1 to 100: ", CalculateMax(numbers))
 
