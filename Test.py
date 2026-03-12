@@ -12,3 +12,8 @@ print("Thats all prime numbers from 1 to 100")
 
 print(*(n for n in range(1, 100) if is_prime(n)))
 
+def CalculateMax(values):
+    max = 0
+    for value in values:
+        if value > max:
+            max = value
