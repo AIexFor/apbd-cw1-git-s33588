@@ -8,4 +8,7 @@ def is_prime(number):
 
     return True
 
+print("Thats all prime numbers from 1 to 100")
+
 print(*(n for n in range(1, 100) if is_prime(n)))
+
