@@ -1,4 +1,4 @@
-def is_primal(number):
+def is_prime(number):
     if number < 2:
         return False
 
@@ -8,4 +8,4 @@ def is_primal(number):
 
     return True
 
-print(is_primal(3))
+print(*(n for n in range(1, 100) if is_prime(n)))
